@@ -15,6 +15,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        btnDial.setOnClickListener {
+
+//            입력한 전화번호? 추출 (변수에 저장)
+
+//            그 전화번호에 실제 전화 연결 (DIAL)
+
+        }
+
         btnMoveToOther.setOnClickListener {
 
 //            OtherActivity 화면으로 이동하기.
@@ -80,7 +88,6 @@ class MainActivity : AppCompatActivity() {
 
 
         }
-
     }
 
 
