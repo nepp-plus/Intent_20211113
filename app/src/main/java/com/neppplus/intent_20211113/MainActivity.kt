@@ -16,6 +16,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        btnKakaoStoreLink.setOnClickListener {
+            val myUri = Uri.parse("market://details?id=com.kakao.talk") // 크롬에서 스토어 주소 market:// 뒤에 복붙
+            val myIntent = Intent( Intent.ACTION_VIEW,  myUri )
+            startActivity(myIntent)
+        }
+
         btnNaverWebLink.setOnClickListener {
 
             val myUri = Uri.parse("https://www.naver.com/") // 크롬에서 주소 복붙
